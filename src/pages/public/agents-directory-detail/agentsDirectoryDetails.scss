@@ -1,0 +1,450 @@
+@import "./../../../app/AppVariables.scss";
+.agent-directory-detail{
+    background-color: #F5FAFE;
+    padding: 300px 0 80px;
+    @include media-query(xxl){
+        padding-top: 250px;
+    } 
+    @include media-query(md){
+        padding-top: 100px;
+    }
+    
+    .directory-listing-inner {
+        width: 100%;
+        background-color: #fff;
+        border-radius: 10px;
+        padding: 28px 40px;
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 30px;
+        @include media-query(sm){
+           padding: 30px 35px;
+        }
+        @include media-query(wid480){
+           padding: 20px;
+        }
+        .agent-img{
+            width: 55px;
+            figure{
+                width: 55px;
+                height: 55px;
+                border-radius: 50%;
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+        }
+        .agent-details {
+            width: calc(100% - 55px);
+            padding-left: 24px;
+            @include media-query(wid480){
+                width: 100%;
+                margin-top: 20px;
+                padding-left: 0;
+            }
+            .agent-name{
+                h3{
+                    font-family: $Avenir-Bold ;
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 22px;
+                    line-height: 20px; 
+                    color: #09318B;
+                    margin-bottom: 8px;
+                    span{
+                        font-family: $Avenir-Regular;
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 17px;
+                        line-height: 20px; 
+                        padding-left: 70px;
+                        @include media-query(sm){
+                            display: block;
+                            padding-left: 0;
+                            padding-top: 10px;
+                        }
+                    }     
+                }
+            }
+            h4.agent-position{ 
+                font-family: $Avenir-Regular;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 17px;
+                line-height: 20px; 
+                color: #09318B;
+            }
+            .agent-details-links{
+                ul{
+                    display: flex;
+                    align-items: center;
+                    flex-wrap: wrap;
+                    list-style: none;
+                    padding: 0;
+                    margin: 0;
+                    li{
+                        margin-top: 13px;
+                        margin-right: 22px;
+                        a{
+                            display: flex;
+                            align-items: center;
+                            font-family: $Avenir-Regular;
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 17px;
+                            line-height: 20px; 
+                            color: #09318B;
+                            text-decoration: none;
+                            span{
+                                width: 18px;
+                                min-width: 18px;
+                                height: 18px;
+                                border-radius: 50%;
+                                border: 1px solid #09318B;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                margin-right: 8px;
+                                svg{
+                                    width: 10px;
+                                    fill: #FDCF21;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .verified-icons{
+            width: 100%;
+            margin-top: 20px;
+            ul{
+                display: flex;
+                align-items: flex-start;
+                flex-wrap: wrap;
+                list-style: none;
+                padding: 0;
+                margin: 0;
+                @include media-query(sm){
+                    justify-content: center;
+                }
+                li{
+                    margin-top: 17px;
+                    margin-right: 25px;
+                    figure{
+                        height: 43px;
+                        width: 65px;
+                        img{
+                            width: 100%;
+                            height: 100%;
+                            object-fit: contain;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .referral-partner{
+        padding: 10px;
+        margin-top: 30px;
+        background-color: #fff;
+        border-radius: 10px;
+        width: 100%;
+        padding: 24px;
+        text-align: center;
+        @include media-query(wid480){
+           padding: 20px;
+        }
+        h3{
+            font-family: $Avenir-Bold;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 15px;
+            line-height: 20px; 
+            color: #09318B;
+            margin-bottom: 22px;
+        }
+        .qr-code{
+            width: 87px;
+            height: 87px;
+            margin: 0 auto 11px;
+            figure{
+                width: 100%;
+                height: 100%;
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: contain;
+                }
+            }
+        }
+        p{
+            font-family: $Avenir-Regular;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 20px; 
+            color: #09318B; 
+        }
+    }
+    // 
+    .agent-detail-info{
+        padding: 35px 50px;
+        margin-top: 30px;
+        background-color: #fff;
+        border-radius: 10px;
+        width: 100%; 
+        @include media-query(xl){
+            padding: 30px ;
+        }
+        @include media-query(wid480){
+           padding: 20px;
+        }
+        p{
+            font-family: $Avenir-Regular;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 24px; 
+            color: #262626;
+            margin-bottom:25px;
+        }
+        ul.apply-download-btn{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            list-style: none;
+            padding: 0;
+            margin: 10px 0 0;
+            li{
+                margin: 5px 5px 0;
+            }
+        }
+    }
+    // 
+    .advisor-assured{
+        padding: 35px 22px;
+        margin-top: 30px;
+        background-color: #fff;
+        border-radius: 10px;
+        width: 100%; 
+        display: flex;
+        align-items: flex-start;
+        figure{
+            width: 141px;
+            @include media-query(xl){
+                width: 110px;
+            }
+            img{
+                width: 100%;
+            }
+        }
+        .advisor-assured-text{
+            width: calc(100% - 141px);
+            padding-left: 16px;
+            @include media-query(xl){
+                width: calc(100% - 110px);
+                padding-left: 12px;
+            }
+            h4{
+                font-family: $Avenir-Bold;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 17px;
+                line-height: 20px; 
+                color: #09318B;
+                margin-bottom: 8px;
+                @include media-query(xl){
+                     font-size: 15px;
+                }
+            }
+            ul{
+                padding: 0;
+                margin: 0;
+                list-style: none;
+                li{
+                    font-family: $Avenir-Regular;
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 13px;
+                    line-height: 24px; 
+                    color: #09318B;
+                    
+                }
+            }
+        }
+    }
+    // 
+    .pre-qualification{
+        padding: 40px 33px;
+        margin-top: 30px;
+        background-color: #fff;
+        border-radius: 10px;
+        width: 100%; 
+        @include media-query(xl){
+             padding: 30px;
+        }
+        @include media-query(wid480){
+           padding: 20px;
+        }
+        h3{
+            font-family: $Avenir-Bold;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 17px;
+            line-height: 20px; 
+            color: #09318B;
+            text-align: center;
+        }
+        ul.pre-qualification-steps{
+            display: flex;
+            flex-wrap: wrap;
+            list-style: none;
+            margin-left: -10px;
+            margin-right: -10px;
+            li{
+                width: 33.33%;
+                padding: 0 10px;
+                margin-top: 26px;
+                display: flex; 
+                @include media-query(sm){
+                    width: 100%;
+                } 
+                .pre-qualification-inner{
+                    background: #F6F6F6;
+                    border: 1px solid #09318B;
+                    border-radius: 10px;
+                    padding: 17px 0;
+                    width: 100%;
+                    h4{
+                        background-color:  #09318B;
+                        padding: 11px 40px;
+                        font-family: $Avenir-Regular; 
+                        font-size: 17px;
+                        line-height: 20px; 
+                        color: #fff;
+                        text-align: center;
+                        min-height: 65px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        margin-bottom: 22px;
+                        @include media-query(xl){
+                             padding: 10px 20px;
+                             font-size: 15px;
+                        }
+                        
+                    }
+                }
+                .pre-qualification-text{
+                    p{
+                        font-family: $Avenir-Regular; 
+                        font-size: 17px;
+                        line-height: 20px;  
+                        text-align: center;
+                        padding: 15px 30px 0;
+                        @include media-query(xl){
+                             padding: 15px 15px 0;
+                             font-size: 15px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    // 
+    .best-mortgage-rates{
+        padding: 40px 100px;
+        margin-top: 30px;
+        background-color: #fff;
+        border-radius: 10px;
+        width: 100%; 
+        @include media-query(xl){
+            padding: 40px 50px;    
+        }
+        @include media-query(sm){
+            padding: 35px;
+        }
+        @include media-query(wid480){
+           padding: 20px;
+        }
+        
+        h3{
+            font-family: $Avenir-Bold;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 17px;
+            line-height: 20px; 
+            color: #09318B;
+            text-align: center;
+            margin-bottom: 18px;
+        }
+        .best-mortgage-list{
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            list-style: none;
+            max-width: 600px;
+            margin: 0 auto;
+            @include media-query(sm){
+                flex-wrap: wrap;
+            }
+            
+            li{
+                background: #F6F6F6;
+                border: 1px solid #09318B;
+                border-radius: 10px;
+                padding: 20px 30px;
+                max-width: 224px;
+                margin-top: 22px;
+                @include media-query(sm){
+                    max-width: 100%;
+                    width: 100%;
+                }
+                
+                p{
+                    font-family: $Avenir-Regular; 
+                    font-size: 18px;
+                    line-height: 26px; 
+                    text-align: center;
+
+                    color: #09318B;
+                    max-width: 144px;
+                    margin: 0 auto 27px;
+                }
+                h4{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    font-family: $Avenir-Bold; 
+                    font-size: 30px;
+                    line-height: 20px; 
+                    text-transform: uppercase; 
+                    color: #09318B;
+                    margin-bottom: 30px;
+                    img{
+                        width: 31px;
+                        margin-right: 5px;
+                    }
+                }
+                button{
+                    padding: 10px;
+                    width: 100%;
+                    font-size: 21px !important;
+                    line-height: 20px !important;
+                    &+button{
+                        margin-top: 10px;
+                    }
+                }
+            }
+        }
+    }
+    .calculators-btn{
+        margin-top: 30px;
+        width: 100%;
+        border-radius: 5px;
+        text-transform: uppercase;
+    }
+}
